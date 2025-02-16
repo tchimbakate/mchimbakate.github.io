@@ -10,8 +10,6 @@
     <title>Devevolution</title>
     <meta name="description" content="Transforming ideas into reality" />
 
-
-
     <!--vendors styles-->
     <link
       rel="stylesheet"
@@ -28,11 +26,9 @@
 
     <!-- Bootstrap CSS / Color Scheme -->
     <link rel="stylesheet" href="css/red.css" id="theme-color" />
-<!-- Firebase SDK -->
-<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
-
-
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
   </head>
   <body>
     <!--navigation-->
@@ -90,17 +86,17 @@
       class="container-fluid px-4 py-5 my-5 text-center"
       style="
         background-image: url('img/devevolution-high-resolution-logo.png');
-        background-size: cover;
-        background-position: center;
+        background-size: cover; /* Ensures the image covers the full container */
+        background-position: center; /* Centers the image */
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         height: 100vh;
+        max-width: 100%; /* Ensures the image is always limited to the container width */
       "
     >
       <div class="lc-block mb-4">
         <br />
-
         <!-- Button at the bottom -->
         <button
           class="btn btn-primary d-inline-flex flex-row align-items-center mb-4"
@@ -110,6 +106,7 @@
         </button>
       </div>
     </div>
+
     <!-- features section -->
     <section class="pt-6 pb-7" id="features">
       <div class="container">
@@ -259,38 +256,62 @@
           </div>
         </div>
 
-    <div class="container">
-        <h1 class="my-4">Contact Us</h1>
-<form id="contactForm" class="row g-3">
-    <div class="col-md-6">
-        <label for="inputFirstName" class="form-label">First Name</label>
-        <input type="text" class="form-control" id="inputFirstName" name="firstName" required>
-    </div>
+        <div class="container">
+          <h1 class="my-4">Contact Us</h1>
+          <form id="contactForm" class="row g-3">
+            <div class="col-md-6">
+              <label for="inputFirstName" class="form-label">First Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputFirstName"
+                name="firstName"
+                required
+              />
+            </div>
 
-    <div class="col-md-6">
-        <label for="inputLastName" class="form-label">Last Name</label>
-        <input type="text" class="form-control" id="inputLastName" name="lastName" required>
-    </div>
+            <div class="col-md-6">
+              <label for="inputLastName" class="form-label">Last Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputLastName"
+                name="lastName"
+                required
+              />
+            </div>
 
-    <div class="col-12">
-        <label for="inputEmail" class="form-label">Email Address</label>
-        <input type="email" class="form-control" id="inputEmail" name="email" placeholder="name@example.com" required>
-    </div>
+            <div class="col-12">
+              <label for="inputEmail" class="form-label">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail"
+                name="email"
+                placeholder="name@example.com"
+                required
+              />
+            </div>
 
-    <div class="col-12">
-        <label for="inputMessage" class="form-label">Message</label>
-        <textarea class="form-control" id="inputMessage" name="message" rows="4" placeholder="Write your message here..." required></textarea>
-    </div>
+            <div class="col-12">
+              <label for="inputMessage" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="inputMessage"
+                name="message"
+                rows="4"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
+            </div>
 
-    <div class="col-12">
-        <br>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
-</form>
-
-    </div>
+            <div class="col-12">
+              <br />
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
     </section>
 
     <!--footer-->
@@ -300,7 +321,12 @@
           <div class="col-sm-5 mr-auto">
             <h5>About Devevolution</h5>
             <p class="text-muted">
-At DevEvolution, we specialize in creating stunning, user-friendly websites tailored to the unique needs of startups, small businesses, and individuals. Whether you need a professional website, e-commerce platform, or a complete digital transformation, we provide high-quality web design and development solutions to help you stand out online.
+              At DevEvolution, we specialize in creating stunning, user-friendly
+              websites tailored to the unique needs of startups, small
+              businesses, and individuals. Whether you need a professional
+              website, e-commerce platform, or a complete digital
+              transformation, we provide high-quality web design and development
+              solutions to help you stand out online.
             </p>
             <ul class="list-inline social social-sm">
               <li class="list-inline-item">
@@ -366,28 +392,29 @@ At DevEvolution, we specialize in creating stunning, user-friendly websites tail
     <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyCY__skewhIVaCsuIF9i7mONJEwoRtTMNU",
-    authDomain: "devolution-uk.firebaseapp.com",
-    databaseURL: "https://devolution-uk-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "devolution-uk",
-    storageBucket: "devolution-uk.firebasestorage.app",
-    messagingSenderId: "387153651411",
-    appId: "1:387153651411:web:1293178498b8494a405626",
-    measurementId: "G-C3Q03EYSS8"
-  };
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCY__skewhIVaCsuIF9i7mONJEwoRtTMNU",
+        authDomain: "devolution-uk.firebaseapp.com",
+        databaseURL:
+          "https://devolution-uk-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "devolution-uk",
+        storageBucket: "devolution-uk.firebasestorage.app",
+        messagingSenderId: "387153651411",
+        appId: "1:387153651411:web:1293178498b8494a405626",
+        measurementId: "G-C3Q03EYSS8",
+      };
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </body>
 </html>
