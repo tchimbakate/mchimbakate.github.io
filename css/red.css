@@ -7919,3 +7919,12 @@ footer h5 {
   background-color: #ffffff;
   transition: all 0.3s;
 }
+#contact-link {
+  color: #e80000;
+  font-weight: bold;
+}
+
+#contact-link:hover {
+  color: #fdeeed;
+  font-weight: bold;
+}
