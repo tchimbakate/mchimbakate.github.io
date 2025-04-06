@@ -40,7 +40,7 @@ const Footer = () => {
         </div>
         <div className="row mt-5">
           <div className="col-12 text-muted text-center small-xl">
-            &copy; 2025 Devevolution - All Rights Reserved
+            &copy; Built By Devevolution - All Rights Reserved
           </div>
         </div>
       </div>

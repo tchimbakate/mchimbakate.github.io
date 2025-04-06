@@ -1,21 +1,28 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Features from "./components/Features";
-import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import "./assets/css/index.css";
+import Portfolio from "./components/Portfolio";
+import Home from "./components/Home";
+import ContactForm from "./components/ContactForm";
+import Features from "./components/Features"; // You'll need to create this
 
 function App() {
-  return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <Features />
-      <ContactForm />
-      <Footer />
-    </div>
-  );
+    return (
+        <Router>
+            <div className="App">
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/contact" element={<ContactForm />} />
+                    <Route path="/services" element={<Features/>} />
+                    <Route path="/portfolio" element={<Portfolio />} />
+                </Routes>
+                <Footer />
+            </div>
+        </Router>
+    );
 }
 
 export default App;
