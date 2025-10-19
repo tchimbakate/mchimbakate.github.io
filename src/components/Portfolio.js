@@ -11,93 +11,107 @@ const Portfolio = () => {
     }, []);
 
     return (
-        <section className="portfolio py-6">
-            <br/>
-            <br/>
-            <div className="col-md-6 mx-auto text-center">
-            <h1>Our Work</h1>
-            </div>
-            <div className="container">
-                <div className="row">
-                    <div className="row">
-                        {/* Shopify Ecommerce Card */}
-                        <div className="col-md-6 mb-4">
-                            <a
-                                href="https://9ydrh3-n0.myshopify.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="card-link"
-                                style={{ textDecoration: 'none', color: 'inherit' }}
-                            >
-                                <div className="card h-100">
-                                    <img
-                                        src="/img/aurelia-london-high-resolution-logo-grayscale.png"
-                                        className="card-img-top"
-                                        alt="Ecommerce (Shopify)"
-                                        style={{
-                                            height: "250px",
-                                            width: "100%",
-                                            objectFit: "cover",
-                                            objectPosition: "center"
-                                        }}
-                                    />
-                                    <div className="card-body">
-                                        <h5 className="card-title">Ecommerce (Shopify)</h5>
-                                        <p className="card-text">
-                                            <ul className="mt-2">
-                                                <li>Mobile-optimized responsive design</li>
-                                                <li>Seamless checkout experience</li>
-                                                <li>Product recommendations engine</li>
-                                                <li>Integrated payment gateways</li>
-                                                <li>SEO-optimized product pages</li>
-                                            </ul>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        {/* Bespoke Websites Card */}
-                        <div className="col-md-6 mb-4">
-                            <a
-                                href="https://devevolution.co.uk"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="card-link"
-                                style={{ textDecoration: 'none', color: 'inherit' }}
-                            >
-                                <div className="card h-100">
-                                    <img
-                                        src="/img/devevolution-home.png"
-                                        className="card-img-top"
-                                        alt="Bespoke Websites"
-                                        style={{
-                                            height: "250px",
-                                            width: "100%",
-                                            objectFit: "cover",
-                                            objectPosition: "center"
-                                        }}
-                                    />
-                                    <div className="card-body">
-                                        <h5 className="card-title">Bespoke Websites</h5>
-                                        <p className="card-text">
-                                            <ul className="mt-2">
-                                                <li>Custom domain + secure hosting</li>
-                                                <li>24/7 support & lifetime maintenance</li>
-                                                <li>Blazing-fast, SEO-friendly performance</li>
-                                                <li>Competitive pricing with no lock-in contracts</li>
-                                                <li>Scalable for future expansions</li>
-                                            </ul>
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+      <section className="portfolio py-6">
+        <br />
+        <br />
+        <div className="col-md-6 mx-auto text-center">
+          <h1>Our Work</h1>
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className="row">
+              {/* EZO Route Planner */}
+              <div className="col-md-6 mb-4">
+                <a
+                  href="https://9ydrh3-V.myshopify.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="card-link"
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  <div className="card h-100">
+                    <img
+                      src="/img/ezo.png"
+                      className="card-img-top"
+                      alt="EZO Route Planner"
+                      style={{
+                        height: "250px",
+                        width: "100%",
+                        objectFit: "cover",
+                        objectPosition: "center",
+                      }}
+                    />
+                    <div className="card-body">
+                      <h5 className="card-title">EZO Route Planner</h5>
+                      <p className="card-text">
+                        <ul className="mt-2">
+                          <li>
+                            Optimised EV Routing: Calculates the most efficient
+                            routes based on starting battery level, destination,
+                            and charging requirements.
+                          </li>
+                          <li>
+                            Integrated Charging Availability: Displays real-time
+                            status of EZO's rapid chargers, allowing drivers to
+                            check availability before arrival.
+                          </li>
+                          <li>
+                            Custom Battery Settings: Offers flexibility to
+                            adjust starting charge percentages, ensuring routes
+                            align with individual EV capabilities.
+                          </li>
+                          <li>
+                            User-Friendly Interface: Designed for ease of use,
+                            enabling drivers to plan journeys with minimal input
+                            and maximum clarity.
+                          </li>
+                        </ul>
+                      </p>
                     </div>
-                </div>
+                  </div>
+                </a>
+              </div>
 
+              {/* Bespoke Websites Card */}
+              <div className="col-md-6 mb-4">
+                <a
+                  href="https://devevolution.co.uk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="card-link"
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  <div className="card h-100">
+                    <img
+                      src="/img/devevolution-home.png"
+                      className="card-img-top"
+                      alt="Bespoke Websites"
+                      style={{
+                        height: "250px",
+                        width: "100%",
+                        objectFit: "cover",
+                        objectPosition: "center",
+                      }}
+                    />
+                    <div className="card-body">
+                      <h5 className="card-title">Bespoke Websites</h5>
+                      <p className="card-text">
+                        <ul className="mt-2">
+                          <li>Custom domain + secure hosting</li>
+                          <li>24/7 support & lifetime maintenance</li>
+                          <li>Blazing-fast, SEO-friendly performance</li>
+                          <li>Competitive pricing with no lock-in contracts</li>
+                          <li>Scalable for future expansions</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     );
 };
 
