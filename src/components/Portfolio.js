@@ -45,33 +45,51 @@ const Portfolio = () => {
                       <h5 className="card-title">EZO Route Planner</h5>
                       <p className="card-text">
                         <ul className="mt-2">
-                          <li>
-                            Optimised EV Routing: Calculates the most efficient
-                            routes based on starting battery level, destination,
-                            and charging requirements.
-                          </li>
-                          <li>
-                            Integrated Charging Availability: Displays real-time
-                            status of EZO's rapid chargers, allowing drivers to
-                            check availability before arrival.
-                          </li>
-                          <li>
-                            Custom Battery Settings: Offers flexibility to
-                            adjust starting charge percentages, ensuring routes
-                            align with individual EV capabilities.
-                          </li>
-                          <li>
-                            User-Friendly Interface: Designed for ease of use,
-                            enabling drivers to plan journeys with minimal input
-                            and maximum clarity.
-                          </li>
+                          <li>Optimised EV Routing</li>
+                          <li>Integrated Charging Availability</li>
+                          <li>Custom Battery Settings</li>
+                          <li>User-Friendly Interface</li>
                         </ul>
                       </p>
                     </div>
                   </div>
                 </a>
               </div>
-
+              {/* Neurodev */}
+              <div className="col-md-6 mb-4">
+                <a
+                  href="https://neurodev.co.uk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="card-link"
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  <div className="card h-100">
+                    <img
+                      src="/img/neurodev.png"
+                      className="card-img-top"
+                      alt="EZO Route Planner"
+                      style={{
+                        height: "250px",
+                        width: "100%",
+                        objectFit: "cover",
+                        objectPosition: "center",
+                      }}
+                    />
+                    <div className="card-body">
+                      <h5 className="card-title">Neurodev</h5>
+                      <p className="card-text">
+                        <ul className="mt-2">
+                          <li>Streamlined Online Booking</li>
+                          <li>Real-Time Availability</li>
+                          <li>Automated Confirmation and Reminders.</li>
+                          <li>Comprehensive Client Management </li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
               {/* Bespoke Websites Card */}
               <div className="col-md-6 mb-4">
                 <a
@@ -83,7 +101,7 @@ const Portfolio = () => {
                 >
                   <div className="card h-100">
                     <img
-                      src="/img/devevolution-home.png"
+                      src="/img/devevolution-high-resolution-logo.png"
                       className="card-img-top"
                       alt="Bespoke Websites"
                       style={{
