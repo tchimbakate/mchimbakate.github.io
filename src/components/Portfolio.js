@@ -23,7 +23,7 @@ const Portfolio = () => {
               {/* EZO Route Planner */}
               <div className="col-md-6 mb-4">
                 <a
-                  href="https://9ydrh3-V.myshopify.com"
+                  href="https://ezo.ie/for-drivers/route-planner/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="card-link"
