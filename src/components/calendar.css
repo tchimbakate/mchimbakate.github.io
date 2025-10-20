@@ -1,0 +1,82 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Space+Grotesk:wght@400;700&display=swap');
+
+/* ================= Calendar Styles ================= */
+
+/* Apply fonts globally inside calendar container */
+.react-calendar {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    /* white text for all tiles by default */
+}
+
+/* Selected date */
+.react-calendar__tile--active {
+    background: #620674 !important;
+    /* deep purple */
+    color: #ffffff !important;
+    border-radius: 6px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Current date (today) */
+.react-calendar__tile--now {
+    background-color: #D8C1DD !important;
+    /* light purple */
+    color: #620674 !important;
+    font-weight: bold;
+    border-radius: 6px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Hover effect for all dates including today */
+.react-calendar__tile:hover {
+    background-color: #B183BA !important;
+    /* medium purple */
+    color: #ffffff !important;
+    border-radius: 6px;
+}
+
+/* Optional: hover specifically for today */
+.react-calendar__tile.react-calendar__tile--now:hover {
+    background-color: #B183BA !important;
+    color: #ffffff !important;
+}
+
+/* ================= Available Slots Buttons ================= */
+
+.btn-available {
+    background-color: #620674;
+    /* deep purple background */
+    color: #ffffff;
+    /* white text */
+    border: 2px solid #620674;
+    border-radius: 6px;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.btn-available:hover {
+    background-color: #B183BA;
+    /* medium purple */
+    color: #ffffff;
+    border-color: #B183BA;
+}
+
+.btn-available:active,
+.btn-available.selected {
+    background-color: #620674;
+    /* deep purple when clicked or selected */
+    color: #ffffff;
+    border-color: #620674;
+}
+
+/* Headings inside calendar component */
+h4,
+h5 {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #ffffff;
+}

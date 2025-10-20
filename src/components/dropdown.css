@@ -1,0 +1,61 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Space+Grotesk:wght@400;700&display=swap');
+
+/* Container label */
+.form-label {
+    color: #ffffff;
+    /* white text */
+    font-weight: bold;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Select dropdown */
+.form-select {
+    background-color: #ffffff;
+    /* deep purple background */
+    color: #000000;
+    /* white text */
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    appearance: none;
+    /* removes default arrow on some browsers */
+    cursor: pointer;
+}
+
+/* Hover effect */
+.form-select:hover {
+    background-color: #B183BA;
+    /* medium purple */
+    color: #ffffff;
+    border-color: #B183BA;
+}
+
+/* Focus effect */
+.form-select:focus {
+    outline: none;
+    background-color: #B183BA;
+    color: #ffffff;
+    border-color: #620674;
+}
+
+/* Option styling */
+.form-select option {
+    background-color: #620674;
+    /* deep purple background for options */
+    color: #ffffff;
+    /* white text */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+}
+
+/* Option hover/selected */
+.form-select option:hover,
+.form-select option:checked {
+    background-color: #B183BA;
+    /* medium purple */
+    color: #ffffff;
+}
